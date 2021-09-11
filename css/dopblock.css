@@ -1,0 +1,44 @@
+.dop-block {
+    margin-right: 5%;
+    margin-top: 2vh;
+    height: 25vw;
+    width: 15vw;
+    float: right;
+    display: inline-block;
+}
+
+.reg-block {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 15vw;
+    background-color: #E1E3E0;
+    border-radius: 3vh 3vh 0 0;
+}
+
+.inreg-block {
+    margin-top: -2.45vh;
+    position: relative;
+    height: 3vh;
+    width: 15vw;
+    background-color: #3D3D3D;
+    border-radius: 3vh 3vh 0 0;
+}
+
+.inblock {
+    position: relative;
+    height: 3vh;
+    width: 15vw;
+    background-color: #3D3D3D;
+    margin-top: 25%;
+}
+
+.about-block {
+    display: inline-block;
+    position: relative;
+    margin-top: 2vh;
+    height: 10vw;
+    width: 15vw;
+    background-color: #E1E3E0;
+    border-radius: 0 0 3vh 3vh;
+}

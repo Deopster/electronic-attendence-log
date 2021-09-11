@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+body {
+	background: #444;
+	color: #48a770;
+	font-weight: 300;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #48a770;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #2c774b;
+	outline: none;
+}
+
+/* To Navigation Style */
+
+.main {
+	max-width: 69em;
+	margin: 0 auto;
+}
+button {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	outline: none;
+	opacity: 0;
+}
+.news1 {
+	position: absolute;
+	width: 7vh;
+	height: 19.5vh;
+	left: 287px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/3.png);
+	z-index: 0;
+	margin-top: -2px;
+}
+
+.news {
+	position: absolute;
+	width: 7vh;
+	height: 20vh;
+	left: 287px;
+	background: url(../img/4.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 120;
+	margin-top: -2px;
+}
+
+.info a {
+	font-weight: 700;
+	font-size: 0.9em;
+}
+
+@media screen and (max-width: 46.0625em) {
+	.column {
+		width: 100%;
+		height:100%;
+		min-width: auto;
+		min-height: auto;
+		padding: 2em; 
+		text-align: center;
+	}
+
+	.column p {
+		font-size: 1.5em;
+	}
+
+	.column:nth-child(2) {
+		text-align: center;
+		box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+	}
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-header {
+		font-size: 80%;
+	}
+
+	.codrops-top {
+		font-size: 120%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+@media (max-width: 1024px) {
+
+	.reg-block {
+		display: none;
+	}
+
+	.st-menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		visibility: hidden;
+		width: 150px;
+		height: 100%;
+		background: #161a1f;
+		-webkit-transition: all 0.5s;
+		transition: all 0.5s;
+	}
+}

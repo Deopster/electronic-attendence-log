@@ -1,0 +1,41 @@
+.table-block {
+    margin-top: 2vh;
+    height: auto;
+    width: 70vw;
+    margin-left: 10vmin;
+    background-color: #E1E3E0;
+    border-radius: 0px 2vh 2vh;
+    z-index: 100;
+    border-radius: 3vh 3vh 0 0;
+    display: none;
+}
+
+.table-block1 {
+    margin-top: 2vh;
+    height: auto;
+    width: 70vw;
+    margin-left: 10vmin;
+    background-color: #E1E3E0;
+    border-radius: 0px 2vh 2vh;
+    z-index: 100;
+    border-radius: 3vh 3vh 0 0;
+    display: inline-block;
+}
+
+.intable-block {
+    margin-top: -2.45vh;
+    position: relative;
+    height: 3vh;
+    width: 70vw;
+    background-color: #3D3D3D;
+    border-radius: 20vh 20vh 0 0;
+}
+
+.e {
+    height: 3vh;
+    background-color: aqua;
+}
+
+.main-block {
+    height: 1500px;
+}

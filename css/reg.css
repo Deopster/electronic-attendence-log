@@ -1,0 +1,136 @@
+.but {
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+}
+
+.buti {
+    width: 15vw;
+    height: 2vw;
+    font-size: 1.2vw;
+    color: darkgrey;
+    background-color: #3D3D3D;
+    z-index: 100;
+    border: ridge #555;
+}
+
+    .buti:hover {
+        border: groove #555;
+    }
+
+.empt {
+    height: 1vw;
+    background: #444444;
+}
+.myuser {
+    display: inline-block;
+    position: relative;
+    height: 15vh;
+    width: 10vw;
+    background-color: #E1E3E0;
+}
+.empt1 {
+    height: 1vw;
+    width: 15vw;
+    background: #444444;
+}
+.bl {
+    width: 15vw;
+    outline: none;
+    border: outset;
+    font-size: 1vw;
+}
+input[type=text] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.5vw solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+    input[type=text]:focus {
+        background-color: rgba(0,0,0,0.2);
+    }
+
+input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.5vw solid #555;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+    input[type=password]:focus {
+        background-color: rgba(0,0,0,0.2);
+    }
+
+
+
+.progress {
+    font: 1em Arial, Tahoma, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-value {
+    color: #333;
+    display: block;
+    line-height: 21px;
+    text-align: left;
+    width: auto;
+    background-color: #E1E3E0;
+    border: none;
+    padding-bottom:1vw;
+}
+.uppart {
+ 
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-bottom: medium solid;
+    border-top: medium solid;
+    border-color: darkgrey;
+}
+.profilepc {
+    position: absolute;
+    margin-left: 9.2vw;
+    width:4vw;
+    margin-top:-3.7vw;
+}
+.lkblock {
+    font: 1em Arial, Tahoma, sans-serif;
+}
+.downpart {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height:auto;
+    min-height:2vh;
+    border-bottom: medium solid;
+    border-color: darkgrey;
+}
+.statpart {
+    width: 90%;
+    position: relative;
+    left: 5%;
+    height: auto;
+    min-height: 2vh;
+}
+.infoout {
+    color: #333;
+    display: block;
+    line-height: 21px;
+    text-align: left;
+    width: 14vw;
+    background-color: #E1E3E0;
+    border: none;
+}
+.bt1 {
+  
+}
+.bt1:hover {
+
+ }
