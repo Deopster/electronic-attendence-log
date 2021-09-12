@@ -319,7 +319,7 @@ else {
     <progress id="prog" max="5" value="0"></progress>
    <input disabled id="allvl" class="progress-value" value="Уровень доступа: 0"></input>
    <div class="progress-bar"></div>
-   <a class="bt1" href=\kurs/index.php?is_exit=1> Выйти</a> 
+   <a class="bt1" href=index.php?is_exit=1> Выйти</a> 
 	</div>
 	<img class="profilepc" src="./img/profile.jpg" alt="Логотип" >
     </div>
@@ -597,7 +597,7 @@ document.querySelector('table').onclick = (event) => {
 function send(val){
     var rno = i;
 	var rnu= j;
-//	alert(i+" "+ j+ " "+tb+ " "+ val);
+	//alert(i+" "+ j+ " "+tb+ " "+ val);
     $.ajax({
         type: "POST",
         url: "ajax.php",
