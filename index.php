@@ -1,16 +1,5 @@
 <?php
-$host = 'localhost'; //имя хоста, на локальном компьютере этоlocalhost
-$user = 'c926642o_1'; //имя пользователя, по умолчанию это root
-$password = 'herosima'; //пароль, по умолчанию пустой
-$db_name = 'c926642o_1'; //имя базы данных
-
-$hostname = "localhost";
-$username = "c926642o_1";
-$pass = "herosima";
-$dbname = "c926642o_1";
-$table = "auth";
-$field_login="login";
-$field_password="password";
+require_once("connect.php");
 session_start();
 $link = mysqli_connect($host, $user, $password, $db_name) or die(mysqli_error($link));
 mysqli_query($link, "SET NAMES 'windows-1251'");
@@ -64,15 +53,15 @@ return $result;
 			
 
 			<ul id "menu">
-				<li><a href="#AOSMD"onClick="change(1)">Архитектура оперционных систем мобильных устройств</a></li>
-				<li><a href="#Matan"onClick="change(2)">Математический анализ</a></li>
-				<li><a href="#Konf"onClick="change(3)">Конфигурационное управление</a></li>
-				<li><a href="#CalcMat"onClick="change(4)">Вычислительная математика</a></li>
-				<li><a href="#filosof"onClick="change(5)">Философия</a></li>
-				<li><a href="#ACM&S"onClick="change(6)">Архитектура вычислительных машин и систем</a></li>
-				<li><a href="#SIAOD"onClick="change(7)">Структуры и алгоритмы обработки данных</a></li>
-				<li><a href="#Eng"onClick="change(8)">Иностранный язык</a></li>
-				<li><a href="#Java"onClick="change(9)">Программирование на яп Java</a></li>
+				<li><a href="#AOSMD"onClick="change(1)">РђСЂС…РёС‚РµРєС‚СѓСЂР° РѕРїРµСЂС†РёРѕРЅРЅС‹С… СЃРёСЃС‚РµРј РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ</a></li>
+				<li><a href="#Matan"onClick="change(2)">РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·</a></li>
+				<li><a href="#Konf"onClick="change(3)">РљРѕРЅС„РёРіСѓСЂР°С†РёРѕРЅРЅРѕРµ СѓРїСЂР°РІР»РµРЅРёРµ</a></li>
+				<li><a href="#CalcMat"onClick="change(4)">Р’С‹С‡РёСЃР»РёС‚РµР»СЊРЅР°СЏ РјР°С‚РµРјР°С‚РёРєР°</a></li>
+				<li><a href="#filosof"onClick="change(5)">Р¤РёР»РѕСЃРѕС„РёСЏ</a></li>
+				<li><a href="#ACM&S"onClick="change(6)">РђСЂС…РёС‚РµРєС‚СѓСЂР° РІС‹С‡РёСЃР»РёС‚РµР»СЊРЅС‹С… РјР°С€РёРЅ Рё СЃРёСЃС‚РµРј</a></li>
+				<li><a href="#SIAOD"onClick="change(7)">РЎС‚СЂСѓРєС‚СѓСЂС‹ Рё Р°Р»РіРѕСЂРёС‚РјС‹ РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅС‹С…</a></li>
+				<li><a href="#Eng"onClick="change(8)">РРЅРѕСЃС‚СЂР°РЅРЅС‹Р№ СЏР·С‹Рє</a></li>
+				<li><a href="#Java"onClick="change(9)">РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ РЅР° СЏРї Java</a></li>
 			</ul>
 			<div class="">
 			</div>
@@ -82,8 +71,8 @@ return $result;
 			<div class="st-content">
 				<div class="st-content-inner">
 				<div class="table-block1"id="AOSMD" >
-						<div class="intable-block"align="center"><h3 >Архитектура операционных систем мобильных устройств</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РђСЂС…РёС‚РµРєС‚СѓСЂР° РѕРїРµСЂР°С†РёРѕРЅРЅС‹С… СЃРёСЃС‚РµРј РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("aosmd");			
 						?>
@@ -91,64 +80,64 @@ return $result;
 						</div>
 				
 						<div class="table-block"id="Matan" >
-						<div class="intable-block"align="center"><h3 >Математический анализ</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РњР°С‚РµРјР°С‚РёС‡РµСЃРєРёР№ Р°РЅР°Р»РёР·</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("matanaliz");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="Konf">
-						<div class="intable-block"align="center"><h3 >Конфигурационное управление</h3></div>
-					    <table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РљРѕРЅС„РёРіСѓСЂР°С†РёРѕРЅРЅРѕРµ СѓРїСЂР°РІР»РµРЅРёРµ</h3></div>
+					    <table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("konf");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="CalcMat">
-						<div class="intable-block"align="center"><h3 >Вычислительная математика</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >Р’С‹С‡РёСЃР»РёС‚РµР»СЊРЅР°СЏ РјР°С‚РµРјР°С‚РёРєР°</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("calcmat");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="filosof">
-						<div class="intable-block"align="center"><h3 >Философия</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >Р¤РёР»РѕСЃРѕС„РёСЏ</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("filosof");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="ACM&S">
-						<div class="intable-block"align="center"><h3 >Архитектура вычислительных машин и систем</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РђСЂС…РёС‚РµРєС‚СѓСЂР° РІС‹С‡РёСЃР»РёС‚РµР»СЊРЅС‹С… РјР°С€РёРЅ Рё СЃРёСЃС‚РµРј</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("acmas");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="SIAOD">
-						<div class="intable-block"align="center"><h3 >Структуры и алгоритмы обработки данных</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РЎС‚СЂСѓРєС‚СѓСЂС‹ Рё Р°Р»РіРѕСЂРёС‚РјС‹ РѕР±СЂР°Р±РѕС‚РєРё РґР°РЅРЅС‹С…</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("siaod");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="Eng">
-						<div class="intable-block"align="center"><h3 >Иностранный язык</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РРЅРѕСЃС‚СЂР°РЅРЅС‹Р№ СЏР·С‹Рє</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("eng");			
 						?>
 						</table>
 						</div>
 						<div class="table-block"id="Java">
-						<div class="intable-block"align="center"><h3 >Программирование на яп Java</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
+						<div class="intable-block"align="center"><h3 >РџСЂРѕРіСЂР°РјРјРёСЂРѕРІР°РЅРёРµ РЅР° СЏРї Java</h3></div>
+						<table > <tr > <th>в„–</th><th width="100%">Р¤.Р.Рћ. </th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=В«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXВ»>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th> <th data-tooltip=date>??</th> <th data-tooltip=date>??</th><th data-tooltip=date>??</th>
 						<?php
 						echo tabl("javalang");			
 						?>
@@ -156,14 +145,14 @@ return $result;
 						</div>
 					    <div class="dop-block">
 						<div class="reg-block">
-						<div class="inreg-block"align="center"><h3 >Авторизация</h3></div>
+						<div class="inreg-block"align="center"><h3 >РђРІС‚РѕСЂРёР·Р°С†РёСЏ</h3></div>
 						
 						<?php
 						require_once("reg.php");
 						?>	
 						</div>
-						<div class="about-block"> <h2>website was done as institute project<h2>
-						<div class="inblock"align="center"><h3 >©2021</h3></div>
+						<div class="about-block"> <h2>РЎРґРµР»Р°РЅРѕ РІ РєР°С‡РµСЃС‚РІРµ РєСѓСЂСЃРѕРІРѕР№ СЂР°Р±РѕС‚С‹ РђРЅРґСЂРµРµРј Р•С„РёРјРѕРІС‹Рј<h2>
+						<div class="inblock"align="center"><h3 >В©2021</h3></div>
 						</div>
 						</div>
 						<button data-effect="st-effect-11">

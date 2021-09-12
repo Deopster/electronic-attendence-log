@@ -557,6 +557,9 @@ var n = '<?php echo $user;?>';
 
 $(function () {
 document.querySelector('table').onclick = (event) => {
+if (m != 5) {
+	alert('У вас нет прав на редактирование.',m);
+	}
 }
 
 //тут остальное
@@ -565,9 +568,6 @@ document.querySelector('table').onclick = (event) => {
 	document.getElementById('allvl').value = "Уровень доступа: "+m;
 	document.getElementById('usname').value = "Вы авторизованы: "+n;
 	$('td').click(function (e) {
-		if (m != 5) {
-			alert('У вас нет прав на редактирование.',m);
-		}
 		if (m == 5)
 		var t = e.target || e.srcElement;
 		let cell = e.target;
