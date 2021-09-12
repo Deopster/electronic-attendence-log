@@ -3,15 +3,15 @@ include "connect.php";
 session_start();
 $link = mysqli_connect($host, $user, $password, $db_name) or die(mysqli_error($link));
 mysqli_query($link, "SET NAMES 'utf8'");
-function tabl($num){
-	$query = "SELECT * FROM aosmd WHERE id > 0";
+function tabl($table){
+	$query = "SELECT * FROM $table WHERE id > 0";
 	$result = mysqli_query($GLOBALS['link'], $query) or die(mysqli_error($link));
 	for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row); $result = ''; foreach ($data as $elem) { 
 	$result .= '<tr>'; 
 	$result .= '<td id="trig">' . $elem['id'] . '</td>';
 	$result .= '<td id="trig">' . $elem['name'] . '</td>';
 	for ($x=1; $x<37; $x++){
-	 $result .= '<td id="aosmd">' . $elem[$x.'A'] . '</td>'; 
+	 $result .= '<td id=$table>' . $elem[$x.'A'] . '</td>'; 
  }
 } 
 echo $result; 
@@ -82,7 +82,7 @@ echo $result;
 						<div class="intable-block"align="center"><h3 >Архитектура операционных систем мобильных устройств</h3></div>
 						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl(1);			
+						echo tabl("aosmd");			
 						?>
 						</table>
 						</div>
