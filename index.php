@@ -90,71 +90,57 @@ echo $result;
 						<!---вызов матана-->
 						<div class="table-block"id="Matan" >
 						<div class="intable-block"align="center"><h3 >Математический анализ</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("matanaliz");			
+						require_once("Matan.php");
 						?>
-						</table>
 						</div>
 						<!---вызов конфигурационки-->
 						<div class="table-block"id="Konf">
 						<div class="intable-block"align="center"><h3 >Конфигурационное управление</h3></div>
-					    <table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
-						<?php
-						echo tabl("konf");			
+					    <?php
+						require_once("Konf.php");
 						?>
-						</table>
 						</div>
 						<!---вызов выч матана-->
 						<div class="table-block"id="CalcMat">
 						<div class="intable-block"align="center"><h3 >Вычислительная математика</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("calcmat");			
+						require_once("CalcMat.php");
 						?>
-						</table>
 						</div>
 						 <!---вызов философия-->
 						<div class="table-block"id="filosof">
 						<div class="intable-block"align="center"><h3 >Философия</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("filosof");			
+						require_once("filosof.php");
 						?>
-						</table>
 						</div>
 					     <!---вызов Архитектуры вычислительных машин и систем-->
 						<div class="table-block"id="ACM&S">
 						<div class="intable-block"align="center"><h3 >Архитектура вычислительных машин и систем</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("acmas");			
+						require_once("ACM&S.php");
 						?>
-						</table>
 						</div>
 						 <!---вызов СИАОД-->
 						<div class="table-block"id="SIAOD">
 						<div class="intable-block"align="center"><h3 >Структуры и алгоритмы обработки данных</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("siaod");			
+						require_once("SIAOD.php");
 						?>
-						</table>
 						</div>
 						 <!---вызов Инглиша-->
 						<div class="table-block"id="Eng">
 						<div class="intable-block"align="center"><h3 >Иностранный язык</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("eng");			
+						require_once("eng.php");
 						?>
 						</div>
 						 <!---вызов Java-->
 						<div class="table-block"id="Java">
 						<div class="intable-block"align="center"><h3 >Программирование на яп Java</h3></div>
-						<table > <tr > <th>№</th><th width="100%">Ф.И.О. </th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th> <th data-tooltip=«дата»>🗓</th><th data-tooltip=«дата»>🗓</th>
 						<?php
-						echo tabl("javalang");			
+						require_once("Java.php");
 						?>
 						</div>
 					     <!--доп блок-->
