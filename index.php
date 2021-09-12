@@ -1,11 +1,11 @@
 ﻿<?php
 include "connect.php";
+session_start();
 $link = mysqli_connect($host, $user, $password, $db_name) or die(mysqli_error($link));
 mysqli_query($link, "SET NAMES 'utf8'");
-session_start()
 function tabl($num){
-	php $query = "SELECT * FROM aosmd WHERE id > 0";
-	$result = mysqli_query($link, $query) or die(mysqli_error($link));
+	$query = "SELECT * FROM aosmd WHERE id > 0";
+	$result = mysqli_query($GLOBALS['link'], $query) or die(mysqli_error($link));
 	for ($data = []; $row = mysqli_fetch_assoc($result); $data[] = $row); $result = ''; foreach ($data as $elem) { 
 	$result .= '<tr>'; 
 	$result .= '<td id="trig">' . $elem['id'] . '</td>';

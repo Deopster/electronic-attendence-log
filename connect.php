@@ -1,5 +1,4 @@
 <?php
-session_start()
 $host = 'localhost'; //имя хоста, на локальном компьютере этоlocalhost
 $user = 'root'; //имя пользователя, по умолчанию это root
 $password = ''; //пароль, по умолчанию пустой
